@@ -67,7 +67,7 @@ test("There are at least 500 words on the page", () => {
 const console = document.getElementById("tests");
 prettify.toHTML(run(), console);
 
-function getWords(type) {
+function getWordss(type) {
   // Return words of a given type, or all words if type is 'WORD'
   let words = [
     {type: 'ADJECTIVE', value: 'big'},
@@ -111,22 +111,22 @@ function randomMember(arr) {
 
 
 document.getElementById('noun1').addEventListener('click', (event) => {
-  event.target.innerText = randomMember(getWords('NOUN'));
+  event.target.innerText = randomMember(getWordss('NOUN'));
 
 });
 
 document.getElementById('verb').addEventListener('click', (event) => {
-  event.target.innerText = randomMember(getWords('VERB'));
+  event.target.innerText = randomMember(getWordss('VERB'));
 
 });
 
 document.getElementById('adjective').addEventListener('click', (event) => {
-  event.target.innerText = randomMember(getWords('ADJECTIVE'));
+  event.target.innerText = randomMember(getWordss('ADJECTIVE'));
 
 });
 
 document.getElementById('noun2').addEventListener('click', (event) => {
-  event.target.innerText = randomMember(getWords('NOUN'));
+  event.target.innerText = randomMember(getWordss('NOUN'));
 
 });
 
