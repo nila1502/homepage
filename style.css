@@ -251,6 +251,9 @@ p {
 .video {
   border: 0px;
 }
+.facts {
+    font-size: 20px;
+}
 
 /* =================
   WRITE YOUR CSS HERE.
