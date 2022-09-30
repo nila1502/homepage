@@ -191,24 +191,24 @@ body {
 }
 
 body {
-  background: linear-gradient(#ccc, #fff);
+  background: linear-gradient(#ccc, rgb(250, 251, 251));
   font: 14px sans-serif;
   padding: 20px;
 }
 .letter {
-  background: #fff;
+  background: rgb(247, 211, 211);
   box-shadow: 0 0 10px rgba(0,0,0,0.3);
   margin: 26px auto 0;
   max-width: 1000px;
-  min-height: 500px;
+  min-height: 500;
   padding: 24px;
   position: relative;
-  width: 80%;
-  float: left;
+  width: 90%;
+  float: center;
 }
 .letter:before, .letter:after {
   content: "";
-  height: 98%;
+  height: 100%;
   position: absolute;
   width: 100%;
   z-index: -1;
@@ -250,9 +250,6 @@ p {
 
 .video {
   border: 0px;
-}
-.facts {
-    font-size: 20px;
 }
 
 /* =================
