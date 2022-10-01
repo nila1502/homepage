@@ -1,6 +1,27 @@
 <!DOCTYPE html>
 <html lang="en" >
 <head>
+<script> var images;
+document.getElementById('start').addEventListener('click', (event) => {
+  images = ['https://images.pexels.com/photos/39284/macbook-apple-imac-computer-39284.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1', 'https://images.pexels.com/photos/1181467/pexels-photo-1181467.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1', 'https://images.pexels.com/photos/1181244/pexels-photo-1181244.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'];
+  let element_image = document.getElementById('image');
+  element_image.setAttribute("src", images[0]);
+
+});
+
+document.getElementById('previous').addEventListener('click', (event) => {
+  let element_image2 = document.getElementById('image');
+  images.unshift(images.slice(-1)[0]);
+  element_image2.setAttribute("src", images.pop());
+
+});
+
+document.getElementById('next').addEventListener('click', (event) => {
+  let element_image3 = document.getElementById('image');
+  images.push(images[0]);
+  element_image3.setAttribute("src", images.shift());
+
+}); </script>
   <meta charset="UTF-8">
   <title>CodePen - Personal Home Page  Template</title>
   <link rel='stylesheet' href='https://unpkg.com/jest-lite@1.0.0-alpha.4/dist/prettify.css'><link rel="stylesheet" href="./style.css">
@@ -70,14 +91,12 @@ Don't delete!-->
                <p>Nila</p>
                <iframe class="video" id="videos" width="750" height="515" src="https://www.youtube.com/embed/MvTSPwftvyo" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
-         <div id=""imgslide>
-            <img id="img" src="">
-            <button id="previous">Previous</button>
-            <button id="next">Next</button>
-         </div>
-               
-            </div>
-            </div>
+         <div>
+   <img id="image" src="">
+   <button id='start'>Start Image Slide</button>
+   <button id="previous">Previous</button>
+   <button id="next">Next</button>
+</div>
          </div>
       </div>
    </main>
