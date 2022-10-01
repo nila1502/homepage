@@ -1,27 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" >
 <head>
-<script> var images;
-document.getElementById('start').addEventListener('click', (event) => {
-  images = ['https://images.pexels.com/photos/39284/macbook-apple-imac-computer-39284.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1', 'https://images.pexels.com/photos/1181467/pexels-photo-1181467.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1', 'https://images.pexels.com/photos/1181244/pexels-photo-1181244.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'];
-  let element_image = document.getElementById('image');
-  element_image.setAttribute("src", images[0]);
-
-});
-
-document.getElementById('previous').addEventListener('click', (event) => {
-  let element_image2 = document.getElementById('image');
-  images.unshift(images.slice(-1)[0]);
-  element_image2.setAttribute("src", images.pop());
-
-});
-
-document.getElementById('next').addEventListener('click', (event) => {
-  let element_image3 = document.getElementById('image');
-  images.push(images[0]);
-  element_image3.setAttribute("src", images.shift());
-
-}); </script>
   <meta charset="UTF-8">
   <title>CodePen - Personal Home Page  Template</title>
   <link rel='stylesheet' href='https://unpkg.com/jest-lite@1.0.0-alpha.4/dist/prettify.css'><link rel="stylesheet" href="./style.css">
@@ -78,15 +57,12 @@ Don't delete!-->
       <div class="letter">
          <p id="reason">My Story. My Reasons.</p>
             <p class="dear"> Dear reader,</p>
-               <p class="para1"> My story began over 10 years ago. I studied journalism, during my final year of university I started a blog. I fell in love with the design and development aspect of it. I would spend more time working on the blog's look than actual journalism work. </p>
-               <p>After graduation, the blog I created was doing well. It received awards from major magazines and people were actually reading it. </p>
-               <p>Everything seemed so unreal.</p>
-               <p>However, a year after, I got unwell, my mental health was deteriorating and I gave up on the work I had spent almost two years creating.</p>
-               <p>Everything fell apart, I didn't know how to pick myself up again. </p>
-               <p>A few years after my first psychotic episode, I finally found the motivation to move forward again. I wanted to work with young kids. I wanted to change lives.</p>
-               <p>I studied to become a teacher. This is when my thoughts started wandering. What if, in the future I open a coding school for young children? This thought has remained with me ever since. It has become my life goal.</p>
-               <p>So, if you are wondering why I want to become a developer? My motivation is my love for coding and my reason is to make my dream a reality. </p>
-               <p>(Below I have shared a video that explores the importance of coding)</p>
+               <p class="para1"> 
+                 During unveristy I started a blog and that's when I started to learn about coding (mainly HTML and CSS). Actually, I enjoyed working on my blog more than actually doing my university work.
+                 This was when my love for coding started. 
+                 My dream is to open a coding school for young people (ages 5-10) because I think that coding is a very important part of our lives and it is best you start learning from a young age.
+                 However, before I do that I would like to work for a company that allows me to practice my knowledge and learn and develop my skills.
+        </p>
                <p> Yours,</p>
                <p>Nila</p>
                <iframe class="video" id="videos" width="750" height="515" src="https://www.youtube.com/embed/MvTSPwftvyo" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
